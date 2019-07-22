@@ -5,7 +5,7 @@
 # b1, b2는 서로 다른 객체지만, 동일한 상태를 공유
 class Singleton2:
 
-    __shared_state={"1":"2"}
+    __shared_state={"1":"2"} # _ 언더바 하나만 있어도 private 이지만, 접근이 가능하므로, __ 언더바 두개를 사용
 
     def __init__(self):
         self.x=1
