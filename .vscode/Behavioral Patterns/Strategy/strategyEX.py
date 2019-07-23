@@ -4,7 +4,7 @@ import abc
 
 class Robot(metaclass=abc.ABCMeta):
     """
-    스트래티지 패턴을 이용하는 역할을 수행
+    context
     """
     
     @abc.abstractmethod
@@ -17,6 +17,9 @@ class Robot(metaclass=abc.ABCMeta):
 
 
 class Atom(Robot):
+    """
+    context 구현
+    """
 
     def set_moving_strategy(self, moving_strategy):
         self._moving_strategy = moving_strategy
@@ -28,6 +31,9 @@ class Atom(Robot):
 
 
 class TaekwonV(Robot):
+    """
+    context 구현
+    """
 
     def set_moving_strategy(self, moving_strategy):
         self._moving_strategy = moving_strategy
@@ -40,7 +46,7 @@ class TaekwonV(Robot):
 
 class MovingStrategy(metaclass=abc.ABCMeta):
     """
-    인터페이스나 추상 클래스로 외부에서 동일한 방식으로 알고리즘을 호출하는 방법을 명시
+    StrategyA
     """
 
     @abc.abstractmethod
@@ -50,7 +56,7 @@ class MovingStrategy(metaclass=abc.ABCMeta):
 
 class WalkingStrategy(MovingStrategy):
     """
-    스트래티지 패턴에서 명시한 알고리즘을 실제로 구현한 클래스
+    ConcreteStrategyA1
     """
 
     def move(self):
@@ -59,7 +65,7 @@ class WalkingStrategy(MovingStrategy):
 
 class FlyingStrategy(MovingStrategy):
     """
-    스트래티지 패턴에서 명시한 알고리즘을 실제로 구현한 클래스
+    ConcreteStrategyA2
     """
 
     def move(self):
@@ -68,7 +74,7 @@ class FlyingStrategy(MovingStrategy):
 
 class AttackStrategy(metaclass=abc.ABCMeta):
     """
-    인터페이스나 추상 클래스로 외부에서 동일한 방식으로 알고리즘을 호출하는 방법을 명시
+    StrategyB
     """
 
     @abc.abstractmethod
@@ -78,7 +84,7 @@ class AttackStrategy(metaclass=abc.ABCMeta):
 
 class PunchAttackStrategy(AttackStrategy):
     """
-    스트래티지 패턴에서 명시한 알고리즘을 실제로 구현한 클래스
+    ConcreteStrategyB1
     """
 
     def attack(self):
@@ -87,7 +93,7 @@ class PunchAttackStrategy(AttackStrategy):
 
 class KickAttackStrategy(AttackStrategy):
     """
-    스트래티지 패턴에서 명시한 알고리즘을 실제로 구현한 클래스
+    ConcreteStrategyB2
     """
 
     def attack(self):
