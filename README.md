@@ -9,6 +9,8 @@
 * Singleton
 * Factory Method
 * Abstract Factory
+* Builder
+* Prototype
 
 
 ### 2. Structual Pattern
@@ -18,6 +20,7 @@
 * Adapter
 * Facade
 * Proxy
+* Adapter
 
 ### 3. Behavioral Pattern
 #### - 클래스 사이의 알고리즘이나 책임 분배에 관련된 패턴
