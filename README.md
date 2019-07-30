@@ -21,6 +21,7 @@
 * Facade
 * Proxy
 * Adapter
+* Flyweight
 
 ### 3. Behavioral Pattern
 #### - 클래스 사이의 알고리즘이나 책임 분배에 관련된 패턴
