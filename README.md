@@ -17,7 +17,6 @@
 #### - 클래스나 객체를 조합해 더 큰구조를 만드는 패턴
 * Composite
 * Decorator
-* Adapter
 * Facade
 * Proxy
 * Adapter
