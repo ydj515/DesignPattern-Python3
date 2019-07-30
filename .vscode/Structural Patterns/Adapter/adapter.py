@@ -1,9 +1,8 @@
 #-*- coding: utf-8 -*-
 
 """
-Convert the interface of a class into another interface clients expect.
-Adapter lets classes work together that couldn't otherwise because of
-incompatible interfaces.
+인터페이스 호환성을 위해 사용
+클래스의 인터페이스를 다른 인터페이스로 변환할 수 있게 해주는 패턴
 """
 
 import abc

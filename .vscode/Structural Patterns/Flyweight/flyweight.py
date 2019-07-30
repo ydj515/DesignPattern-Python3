@@ -1,12 +1,11 @@
+#-*- coding: utf-8 -*-
 
+import abc
 
 """
 동일한 것을 공유해서 (메모리)낭비를 없애기
 객체를 가볍게 하기
 """
-
-import abc
-
 
 class FlyweightFactory:
     """
